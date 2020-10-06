@@ -5,13 +5,13 @@ from flask import Flask,render_template,send_file,request,url_for,session,redire
 import pyrebase
 
 config = {
-      "apiKey": "AIzaSyCOVRvLK4SdQBHw2BNAmPXF45Nhck8ddaY",
-    "authDomain": "issac-8543d.firebaseapp.com",
-    "databaseURL": "https://issac-8543d.firebaseio.com",
-    "projectId": "issac-8543d",
-    "storageBucket": "issac-8543d.appspot.com",
-    "messagingSenderId": "314588981800",
-    "appId": "1:314588981800:web:71aa8a1f04f88cd94e231d"
+      "apiKey": "YOUR API KEY",
+    "authDomain": "DOMAIN",
+    "databaseURL": "DATABASE URL",
+    "projectId": "PROJECT ID",
+    "storageBucket": "STORAGE BUCKET ID",
+    "messagingSenderId": "SENDER ID",
+    "appId": "APP ID"
 }
 
 firebase = pyrebase.initialize_app(config)
