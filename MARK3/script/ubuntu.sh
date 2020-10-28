@@ -1,4 +1,4 @@
-a=`sudo docker run -d -P eg_sshd` 
+a=`sudo docker run -d -P ubuntu2` 
 b=`sudo docker port $a | tail -c 6`
-c=`python3 details.py`
-echo  "$c -p $b"   
+c=`curl https://checkip.amazonaws.com`
+echo  "ssh root@$c -p $b"   

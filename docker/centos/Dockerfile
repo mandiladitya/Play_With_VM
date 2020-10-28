@@ -11,6 +11,7 @@ rm -f /lib/systemd/system/basic.target.wants/*;\
 rm -f /lib/systemd/system/anaconda.target.wants/*;
 VOLUME [ "/sys/fs/cgroup" ]
 RUN yum -y install openssh-server openssh-clients
+#RUN echo "figlet -f big Play With VM" >> /root/.bashrc
 RUN echo 'root:THEPASSWORDYOUCREATED' | chpasswd
 RUN ssh-keygen -f /etc/ssh/ssh_host_rsa_key -N '' -t rsa
 RUN ssh-keygen -f /etc/ssh/ssh_host_ed25519_key -N '' -t ed25519

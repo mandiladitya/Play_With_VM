@@ -1,6 +1,6 @@
-a=`sudo docker run -d -P upython` 
+a=`sudo docker run -d -P upython2` 
 b=`sudo docker port $a | tail -c 6`
 
-c=`cat details.txt`
-echo  "$c -p $b" 
+c=`curl https://checkip.amazonaws.com`
+echo  "ssh root@$c -p $b" 
 
