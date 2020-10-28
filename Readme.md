@@ -11,3 +11,8 @@ Tech Stack of Play With VM
 * Ansible - For multiple servers deployment
 ```
 ### New Branch : UpdatedVM
+
+### Interesting Facts :
+```
+Check Public IP of EC2 : https://checkip.amazonaws.com
+```
