@@ -135,14 +135,14 @@ def cpython():
 		return redirect(url_for('home'))
 @app.route('/cnodejs')
 def cnodejs():
-	#if 'username' in session:
-	#	name=session['username']
-	#	os.system('./script/cnodejs.sh > ./textfiles/cnodejs.txt')
-	#	with open('./textfiles/cnodejs.txt','r') as f:
-	#		return render_template('cnodejs.html',text=f.read(),name=name)
-	#else:
-	#	return redirect(url_for('home'))
-	return " Sorry Right Now Centos + Nodejs NOT Working "
+	if 'username' in session:
+		name=session['username']
+		os.system('./script/cnodejs.sh > ./textfiles/cnodejs.txt')
+		with open('./textfiles/cnodejs.txt','r') as f:
+			return render_template('cnodejs.html',text=f.read(),name=name)
+	else:
+		return redirect(url_for('home'))
+	#return " Sorry Right Now Centos + Nodejs NOT Working "
 
 @app.errorhandler(404)
 def error(e):
