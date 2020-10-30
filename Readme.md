@@ -10,14 +10,15 @@ Hosted on AWS and Managed by Docker Swarm
 ```
 Tech Stack of Play With VM
 ------------------------------
-* Python 
-* Flask
-* Docker
-* Linux
-* AWS - For EC2 Computations
-* Jenkins - For CI/CD
-* Ansible - For multiple servers deployment
+● Python 
+● Flask
+● Docker
+● Linux
+● AWS - For EC2 Computations
+● Jenkins - For CI/CD
+● Ansible - For multiple servers deployment
 ```
+-----------------------------------------------
 
 ### Interesting Facts :
 ```
